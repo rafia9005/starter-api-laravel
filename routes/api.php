@@ -21,3 +21,4 @@ Route::get("/users", [UserController::class, 'index']);
 Route::get("/users/{id}", [UserController::class, 'show']);
 Route::get("/jobs", [JobsController::class, 'index']);
 Route::get("/jobs/{id}", [JobsController::class, 'show']);
+Route::put("/jobs/{id}", [JobsController::class, 'update']);
